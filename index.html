@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#171a21" name="theme-color"/>
+  <title>
+   Steam Experience | Análise UX/UI
+  </title>
+  <link href="assets/icons/steam.svg" rel="icon"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/script.js">
+  </script>
+ </head>
+ <body>
+  <a class="skip" href="#main">
+   Ir para o conteúdo
+  </a>
+  <header class="topbar">
+   <button aria-label="Voltar ao início" class="brand" data-go="0">
+    <img alt="" src="assets/icons/steam.svg"/>
+    <span>
+     STEAM
+     <small>
+      EXPERIENCE
+     </small>
+    </span>
+   </button>
+   <nav aria-label="Atalhos de capítulos" class="topnav">
+    <button data-go="1">
+     PLATAFORMA
+    </button>
+    <button data-go="2">
+     ANÁLISE
+    </button>
+    <button data-go="8">
+     REDESIGN
+    </button>
+   </nav>
+   <div class="top-actions">
+    <button aria-label="Ativar tela cheia" class="secondary" id="fullscreen" title="Tela cheia (F)">
+     ⛶
+     <span>
+      Tela cheia
+     </span>
+    </button>
+    <button aria-controls="sidebar" aria-expanded="false" aria-label="Abrir menu de capítulos" class="secondary" id="menu-toggle">
+     ☰
+     <span>
+      Capítulos
+     </span>
+    </button>
+   </div>
+  </header>
+  <div class="shell">
+   <aside class="sidebar" id="sidebar">
+    <div class="sidebar-label">
+     <span class="live-dot">
+     </span>
+     MODO APRESENTAÇÃO
+    </div>
+    <p class="sidebar-title">
+     Biblioteca de capítulos
+    </p>
+    <nav aria-label="Capítulos">
+     <button aria-current="step" class="chapter" data-go="0">
+      <span>
+       01
+      </span>
+      <span>
+       Início
+      </span>
+     </button>
+     <button class="chapter" data-go="1">
+      <span>
+       02
+      </span>
+      <span>
+       Conhecendo a Steam
+      </span>
+     </button>
+     <button class="chapter" data-go="2">
+      <span>
+       03
+      </span>
+      <span>
+       Experiência do usuário
+      </span>
+     </button>
+     <button class="chapter" data-go="3">
+      <span>
+       04
+      </span>
+      <span>
+       Interface do usuário
+      </span>
+     </button>
+     <button class="chapter" data-go="4">
+      <span>
+       05
+      </span>
+      <span>
+       Engajamento e retenção
+      </span>
+     </button>
+     <button class="chapter" data-go="5">
+      <span>
+       06
+      </span>
+      <span>
+       Heurísticas de Nielsen
+      </span>
+     </button>
+     <button class="chapter" data-go="6">
+      <span>
+       07
+      </span>
+      <span>
+       Acessibilidade digital
+      </span>
+     </button>
+     <button class="chapter" data-go="7">
+      <span>
+       08
+      </span>
+      <span>
+       Pontos positivos e negativos
+      </span>
+     </button>
+     <button class="chapter" data-go="8">
+      <span>
+       09
+      </span>
+      <span>
+       Propostas de redesign
+      </span>
+     </button>
+     <button class="chapter" data-go="9">
+      <span>
+       10
+      </span>
+      <span>
+       Avaliação geral
+      </span>
+     </button>
+     <button class="chapter" data-go="10">
+      <span>
+       11
+      </span>
+      <span>
+       Considerações finais
+      </span>
+     </button>
+     <button class="chapter" data-go="11">
+      <span>
+       12
+      </span>
+      <span>
+       Referências
+      </span>
+     </button>
+     <button class="chapter" data-go="12">
+      <span>
+       13
+      </span>
+      <span>
+       Agradecimentos
+      </span>
+     </button>
+    </nav>
+    <div class="side-bottom">
+     <span>
+      ATALHOS
+     </span>
+     <p>
+      <kbd>
+       ←
+      </kbd>
+      <kbd>
+       →
+      </kbd>
+      Navegar
+      <kbd>
+       F
+      </kbd>
+      Tela cheia
+     </p>
+     <details class="keys">
+      <summary>
+       Todos os atalhos
+      </summary>
+      <p>
+       Espaço: avançar · Home: início · End: fim · Esc: sair da tela cheia.
+      </p>
+     </details>
+    </div>
+   </aside>
+   <main class="main" id="main" tabindex="-1">
+    <section aria-label="Início" class="chapter-page" id="capitulo-01">
+     <div class="hero">
+      <div class="hero-copy">
+       <p class="eyebrow">
+        UX / UI • TRABALHO ACADÊMICO
+       </p>
+       <div class="hero-brand">
+        <img alt="Símbolo inspirado na Steam" src="assets/icons/steam.svg">
+         <span>
+          STEAM
+         </span>
+        </img>
+       </div>
+       <h1 tabindex="-1">
+        STEAM
+        <br/>
+        <span>
+         EXPERIENCE
+        </span>
+       </h1>
+       <p class="hero-sub">
+        Uma análise da experiência do usuário e do design de interface de uma das maiores plataformas de distribuição digital de jogos para PC.
+       </p>
+       <p class="hero-team" data-field="integrantes">
+       </p>
+       <button class="primary large" data-go="1">
+        Iniciar apresentação
+        <span aria-hidden="true">
+         →
+        </span>
+       </button>
+      </div>
+      <div aria-hidden="true" class="hero-art">
+       <div class="art-window">
+        <div class="art-top">
+         <i>
+         </i>
+         <i>
+         </i>
+         <i>
+         </i>
+         <span>
+          STEAM / LOJA
+         </span>
+        </div>
+        <div class="art-inner">
+         <div class="art-label">
+          DESTAQUES E RECOMENDADOS
+         </div>
+         <img alt="" class="art-main" src="assets/images/orbit.svg"/>
+         <div class="art-bottom">
+          <div>
+           <b>
+            Orbital
+           </b>
+           <small>
+            Exploração espacial
+           </small>
+          </div>
+          <span>
+           EM DESTAQUE
+          </span>
+         </div>
+         <div class="art-grid">
+          <img alt="" src="assets/images/forest.svg"/>
+          <img alt="" src="assets/images/city.svg"/>
+         </div>
+        </div>
+       </div>
+       <div class="art-caption">
+        REPRESENTAÇÃO VISUAL AUTORAL · JOGOS FICTÍCIOS
+       </div>
+      </div>
+     </div>
+     <div class="hero-strip">
+      <div>
+       <b>
+        13
+       </b>
+       <span>
+        Capítulos
+       </span>
+      </div>
+      <div>
+       <b>
+        04
+       </b>
+       <span>
+        Perguntas norteadoras
+       </span>
+      </div>
+      <div>
+       <b>
+        10
+       </b>
+       <span>
+        Heurísticas de Nielsen
+       </span>
+      </div>
+      <div>
+       <b>
+        01
+       </b>
+       <span>
+        Proposta de redesign
+       </span>
+      </div>
+     </div>
+    </section>
+    <section aria-label="Conhecendo a Steam" class="chapter-page" hidden="" id="capitulo-02">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 02 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Conhecendo a Steam
+      </h2>
+      <p class="lead">
+       Muito mais que uma loja: um ecossistema digital para jogadores e criadores.
+      </p>
+     </header>
+     <div class="intro-band">
+      <div>
+       <span class="eyebrow">
+        DESENVOLVIDA PELA VALVE
+       </span>
+       <h3>
+        Da descoberta ao jogo.
+       </h3>
+       <p>
+        Lançada em 2003, a Steam reúne distribuição de jogos, biblioteca pessoal, atualizações e recursos sociais. Atende jogadores de PC, de iniciantes a entusiastas, além de desenvolvedores e editoras. Sua relevância está na integração entre distribuição, comunidade e relacionamento com criadores.
+       </p>
+      </div>
+      <div class="year">
+       <strong>
+        2003
+       </strong>
+       <span>
+        Ano de lançamento · Valve
+       </span>
+      </div>
+     </div>
+     <div class="cards four">
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ▤
+       </span>
+       <h3>
+        Loja
+       </h3>
+       <p>
+        Descobrir, comparar e adquirir jogos.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ▥
+       </span>
+       <h3>
+        Biblioteca
+       </h3>
+       <p>
+        Organizar e acessar os títulos adquiridos.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ◎
+       </span>
+       <h3>
+        Comunidade
+       </h3>
+       <p>
+        Participar de fóruns, grupos e conteúdos.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ☏
+       </span>
+       <h3>
+        Amigos e conversas
+       </h3>
+       <p>
+        Trocar mensagens e jogar em conjunto.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ⚙
+       </span>
+       <h3>
+        Workshop
+       </h3>
+       <p>
+        Encontrar e publicar conteúdo da comunidade.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ★
+       </span>
+       <h3>
+        Avaliações
+       </h3>
+       <p>
+        Consultar experiências de outros jogadores.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ↓
+       </span>
+       <h3>
+        Gerenciamento
+       </h3>
+       <p>
+        Instalar, atualizar e administrar arquivos.
+       </p>
+      </article>
+     </div>
+    </section>
+    <section aria-label="Experiência do usuário" class="chapter-page" hidden="" id="capitulo-03">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 03 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Experiência do usuário (UX)
+      </h2>
+      <p class="lead">
+       UX é o conjunto de percepções e dificuldades vividas ao utilizar um produto — antes, durante e depois da interação.
+      </p>
+     </header>
+     <div class="answer">
+      <span class="eyebrow">
+       PERGUNTA NORTEADORA
+      </span>
+      <h3>
+       É fácil de usar?
+      </h3>
+      <p>
+       Em geral, sim para tarefas centrais. A complexidade cresce quando o usuário explora recursos avançados ou ainda não conhece a estrutura da plataforma.
+      </p>
+     </div>
+     <div aria-label="Fluxo de uso" class="journey">
+      <span>
+       01
+       <b>
+        Buscar
+       </b>
+      </span>
+      <span>
+       02
+       <b>
+        Comparar
+       </b>
+      </span>
+      <span>
+       03
+       <b>
+        Comprar
+       </b>
+      </span>
+      <span>
+       04
+       <b>
+        Instalar
+       </b>
+      </span>
+      <span>
+       05
+       <b>
+        Jogar
+       </b>
+      </span>
+     </div>
+     <div class="two">
+      <article class="review positive">
+       <h3>
+        <span aria-hidden="true">
+         ＋
+        </span>
+        Facilita o uso
+       </h3>
+       <ul>
+        <li>
+         Menus principais separam loja e biblioteca.
+        </li>
+        <li>
+         Busca, filtros e avaliações ajudam a escolher.
+        </li>
+        <li>
+         Compra, instalação e atualizações no mesmo ecossistema.
+        </li>
+        <li>
+         Coleções e busca organizam a biblioteca.
+        </li>
+       </ul>
+      </article>
+      <article class="review negative">
+       <h3>
+        <span aria-hidden="true">
+         −
+        </span>
+        Pode dificultar
+       </h3>
+       <ul>
+        <li>
+         Menus secundários e configurações são extensos.
+        </li>
+        <li>
+         Etiquetas e filtros exigem familiaridade.
+        </li>
+        <li>
+         Iniciantes podem se perder entre ofertas e recursos sociais.
+        </li>
+        <li>
+         Usuários experientes tendem a criar atalhos e rotinas.
+        </li>
+       </ul>
+      </article>
+     </div>
+    </section>
+    <section aria-label="Interface do usuário" class="chapter-page" hidden="" id="capitulo-04">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 04 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Interface do usuário (UI)
+      </h2>
+      <p class="lead">
+       UI é a camada visual e interativa: menus, cores, textos, ícones e controles que dão forma à experiência.
+      </p>
+     </header>
+     <div class="answer">
+      <span class="eyebrow">
+       PERGUNTA NORTEADORA
+      </span>
+      <h3>
+       O design ajuda a entender as funções?
+      </h3>
+      <p>
+       Sim, sobretudo pela separação das áreas e pela hierarquia visual. A densidade de algumas páginas, porém, pode reduzir a clareza.
+      </p>
+     </div>
+     <div class="ui-layout">
+      <div class="annotated">
+       <div aria-label="Protótipo ilustrativo da loja" class="mock dense">
+        <div class="mock-top">
+         <img alt="" src="assets/icons/steam.svg"/>
+         STEAM
+         <span>
+          LOJA　 BIBLIOTECA　 COMUNIDADE
+         </span>
+        </div>
+        <div class="mock-nav">
+         Sua loja · Novidades · Categorias · Pontos · Notícias · Laboratório
+         <span class="mock-search">
+          Buscar jogos　⌕
+         </span>
+        </div>
+        <div class="mock-body">
+         <div class="mock-side">
+          Recomendados
+          <br/>
+          Listas de descoberta
+          <br/>
+          Novidades
+          <br/>
+          Mais vendidos
+          <br/>
+          Ofertas
+          <br/>
+          Marcadores
+          <br/>
+          Curadores
+         </div>
+         <div class="mock-main">
+          <strong>
+           Destaques e recomendados
+          </strong>
+          <small>
+           Ofertas • Novidades • Descobertas • Eventos
+          </small>
+          <div class="mock-feature">
+           <img alt="Arte fictícia de um jogo espacial" src="assets/images/orbit.svg"/>
+           <div>
+            <b>
+             Orbital
+            </b>
+            <small>
+             Ação · Indie · Exploração · Mais
+            </small>
+            <span class="mock-label">
+             Ver detalhes
+            </span>
+           </div>
+          </div>
+          <div class="mock-tiles">
+           <img alt="Capa fictícia de jogo" src="assets/images/orbit.svg"/>
+           <img alt="Capa fictícia de jogo" src="assets/images/forest.svg"/>
+           <img alt="Capa fictícia de jogo" src="assets/images/city.svg"/>
+          </div>
+         </div>
+        </div>
+       </div>
+       <span aria-hidden="true" class="pin p1" title="Menu principal">
+        1
+       </span>
+       <span aria-hidden="true" class="pin p2" title="Cores e contraste">
+        2
+       </span>
+       <span aria-hidden="true" class="pin p3" title="Hierarquia e tipografia">
+        3
+       </span>
+       <span aria-hidden="true" class="pin p4" title="Botões e ícones">
+        4
+       </span>
+       <p class="muted tiny">
+        Representação autoral da interface, não captura oficial.
+       </p>
+      </div>
+      <div class="annotation-list">
+       <details class="detail">
+        <summary>
+         <span class="number">
+          01
+         </span>
+         Navegação
+        </summary>
+        <div class="detail-body">
+         <p>
+          Rótulos principais agrupam tarefas frequentes; menus secundários podem exigir exploração.
+         </p>
+        </div>
+       </details>
+       <details class="detail">
+        <summary>
+         <span class="number">
+          02
+         </span>
+         Cores e contraste
+        </summary>
+        <div class="detail-body">
+         <p>
+          Azuis destacam ações e links em superfícies escuras; textos discretos merecem verificação de contraste.
+         </p>
+        </div>
+       </details>
+       <details class="detail">
+        <summary>
+         <span class="number">
+          03
+         </span>
+         Hierarquia e tipografia
+        </summary>
+        <div class="detail-body">
+         <p>
+          Títulos maiores, imagens e blocos dirigem o olhar, mas a abundância de destaques compete pela atenção.
+         </p>
+        </div>
+       </details>
+       <details class="detail">
+        <summary>
+         <span class="number">
+          04
+         </span>
+         Botões e ícones
+        </summary>
+        <div class="detail-body">
+         <p>
+          Ações consistentes e ícones familiares reduzem esforço; ícones isolados precisam de rótulos.
+         </p>
+        </div>
+       </details>
+       <div aria-label="Paleta Steam" class="palette">
+        <span aria-label="#171A21" style="--swatch:#171A21" title="#171A21">
+        </span>
+        <span aria-label="#1B2838" style="--swatch:#1B2838" title="#1B2838">
+        </span>
+        <span aria-label="#2A475E" style="--swatch:#2A475E" title="#2A475E">
+        </span>
+        <span aria-label="#66C0F4" style="--swatch:#66C0F4" title="#66C0F4">
+        </span>
+        <span aria-label="#C7D5E0" style="--swatch:#C7D5E0" title="#C7D5E0">
+        </span>
+        <span aria-label="#FFFFFF" style="--swatch:#FFFFFF" title="#FFFFFF">
+        </span>
+        <span aria-label="#5C7E10" style="--swatch:#5C7E10" title="#5C7E10">
+        </span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section aria-label="Engajamento e retenção" class="chapter-page" hidden="" id="capitulo-05">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 05 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Engajamento e retenção
+      </h2>
+      <p class="lead">
+       A plataforma combina descoberta, recompensas e relações sociais para incentivar novos acessos.
+      </p>
+     </header>
+     <div class="answer">
+      <span class="eyebrow">
+       PERGUNTA NORTEADORA
+      </span>
+      <h3>
+       Você sente vontade de continuar usando?
+      </h3>
+      <p>
+       Para muitos perfis, os recursos podem incentivar o retorno. A fidelização depende de utilidade, satisfação e controle do usuário, não apenas de estímulos comerciais.
+      </p>
+     </div>
+     <div class="cards">
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ⌕
+       </span>
+       <h3>
+        Descoberta
+       </h3>
+       <p>
+        Recomendações e avaliações ajudam a encontrar novos jogos.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        %
+       </span>
+       <h3>
+        Promoções e eventos
+       </h3>
+       <p>
+        Descontos sazonais criam motivos para visitar a loja.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ♡
+       </span>
+       <h3>
+        Lista de desejos
+       </h3>
+       <p>
+        Acompanha interesses e permite receber avisos de ofertas.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ★
+       </span>
+       <h3>
+        Conquistas
+       </h3>
+       <p>
+        Metas e progresso podem tornar a experiência mais envolvente.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ◎
+       </span>
+       <h3>
+        Comunidade e amigos
+       </h3>
+       <p>
+        Conversas, grupos e atividades compartilhadas fortalecem vínculos.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ◇
+       </span>
+       <h3>
+        Perfil e gamificação
+       </h3>
+       <p>
+        Personalização e colecionáveis incentivam expressão e participação.
+       </p>
+      </article>
+     </div>
+     <div class="notice">
+      <strong>
+       Contraponto:
+      </strong>
+      urgência promocional e excesso de estímulos podem favorecer compras por impulso e distração. Controles de notificações e recomendações podem reduzir esse efeito.
+     </div>
+    </section>
+    <section aria-label="Heurísticas de Nielsen" class="chapter-page" hidden="" id="capitulo-06">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 06 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       10 heurísticas de Nielsen
+      </h2>
+      <p class="lead">
+       Princípios de usabilidade aplicados à Steam. Abra cada item para consultar a análise qualitativa.
+      </p>
+     </header>
+     <div class="heur-toolbar">
+      <span>
+       10 critérios · sem testes com participantes
+      </span>
+      <button aria-expanded="false" class="secondary" id="expand-heur">
+       Expandir todos
+      </button>
+     </div>
+     <div class="heur-grid">
+      <details class="detail">
+       <summary>
+        <span class="number">
+         01
+        </span>
+        Visibilidade do estado do sistema
+        <span class="status">
+         Forte
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Informar o andamento das ações.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Downloads indicam progresso e estado.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Acompanhamento de instalações.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Estados e filas podem confundir.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         02
+        </span>
+        Correspondência com o mundo real
+        <span class="status">
+         Forte
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Usar conceitos reconhecíveis.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Carrinho e biblioteca remetem a práticas familiares.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Rótulos compreensíveis.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Termos de jogos podem exigir repertório.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         03
+        </span>
+        Controle e liberdade
+        <span class="status">
+         Forte
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Permitir cancelar ou desfazer ações quando possível.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Pausar downloads e remover itens do carrinho.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Autonomia em tarefas comuns.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Algumas alterações exigem vários passos.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         04
+        </span>
+        Consistência e padrões
+        <span class="status">
+         Boa
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Manter comportamentos previsíveis.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Áreas principais compartilham identidade visual.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Reconhecimento de padrões.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Cliente, comunidade e loja podem divergir.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         05
+        </span>
+        Prevenção de erros
+        <span class="status">
+         Boa
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Evitar enganos antes da ação.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Revisão de itens antes da compra.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Oportunidade de verificar escolhas.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Compatibilidade ou edições podem gerar dúvidas.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         06
+        </span>
+        Reconhecimento em vez de memorização
+        <span class="status">
+         Boa
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Exibir opções em vez de exigir lembrança.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Biblioteca, filtros e capas visíveis.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Identificação rápida.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Menus profundos dificultam encontrar funções.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         07
+        </span>
+        Flexibilidade e eficiência
+        <span class="status">
+         Forte
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Atender diferentes níveis de experiência.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Coleções, busca e filtros.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Fluxos personalizados.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Recursos avançados pouco evidentes ao iniciante.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         08
+        </span>
+        Estética e design minimalista
+        <span class="status warn">
+         A melhorar
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Priorizar informação relevante.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Destaques organizados em blocos.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Hierarquia visual presente.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Muitos banners e ofertas podem sobrecarregar.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         09
+        </span>
+        Reconhecimento e recuperação de erros
+        <span class="status">
+         Boa
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Orientar a solução de falhas.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Mensagens de falha e links para suporte.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Possibilidade de buscar ajuda.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Mensagens técnicas podem ser pouco claras.
+        </p>
+       </div>
+      </details>
+      <details class="detail">
+       <summary>
+        <span class="number">
+         10
+        </span>
+        Ajuda e documentação
+        <span class="status">
+         Boa
+        </span>
+       </summary>
+       <div class="detail-body">
+        <p>
+         Oferecer orientação acessível.
+        </p>
+        <p>
+         <b>
+          Exemplo:
+         </b>
+         Central de suporte e guias da comunidade.
+        </p>
+        <p>
+         <b>
+          Ponto positivo:
+         </b>
+         Material de apoio disponível.
+        </p>
+        <p>
+         <b>
+          Possível problema:
+         </b>
+         Encontrar a resposta exata pode exigir pesquisa.
+        </p>
+       </div>
+      </details>
+     </div>
+     <p class="muted tiny">
+      Base conceitual: Jakob Nielsen / Nielsen Norman Group. Classificações interpretativas desta apresentação.
+     </p>
+    </section>
+    <section aria-label="Acessibilidade digital" class="chapter-page" hidden="" id="capitulo-07">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 07 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Acessibilidade digital
+      </h2>
+      <p class="lead">
+       Inclusão significa permitir que pessoas com diferentes capacidades consigam perceber, operar e compreender a interface.
+      </p>
+     </header>
+     <div class="notice">
+      <strong>
+       Referência: WCAG 2.2 (W3C).
+      </strong>
+      Os critérios orientam a análise; não houve auditoria técnica da Steam nem verificação de conformidade.
+     </div>
+     <div class="cards">
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ◐
+       </span>
+       <h3>
+        Contraste e textos
+       </h3>
+       <p>
+        Verificar relação de contraste, especialmente textos pequenos; oferecer tamanho ajustável.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ⌨
+       </span>
+       <h3>
+        Teclado e foco
+       </h3>
+       <p>
+        Garantir acesso a menus, diálogos e controles com foco visível e ordem lógica.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ◎
+       </span>
+       <h3>
+        Leitores de tela
+       </h3>
+       <p>
+        Verificar nomes acessíveis, estados, semântica e anúncios de atualizações.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ◉
+       </span>
+       <h3>
+        Percepção visual
+       </h3>
+       <p>
+        Não depender apenas de cor, imagens ou ícones; incluir rótulos e alternativas.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ≡
+       </span>
+       <h3>
+        Clareza cognitiva
+       </h3>
+       <p>
+        Simplificar linguagem, reduzir distrações e orientar tarefas complexas.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        ▯
+       </span>
+       <h3>
+        Dispositivos móveis
+       </h3>
+       <p>
+        Verificar redimensionamento, alvos de toque e adaptação sem perda de conteúdo.
+       </p>
+      </article>
+     </div>
+     <details class="detail">
+      <summary>
+       O que as WCAG recomendam?
+      </summary>
+      <div class="detail-body">
+       <p>
+        Como referências para conteúdo web: contraste mínimo de 4,5:1 para texto comum (com exceções), operação por teclado, foco perceptível e alternativas textuais. A aplicação ao cliente nativo exige verificações adicionais.
+       </p>
+      </div>
+     </details>
+    </section>
+    <section aria-label="Pontos positivos e negativos" class="chapter-page" hidden="" id="capitulo-08">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 08 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Pontos positivos e negativos
+      </h2>
+      <p class="lead">
+       Síntese da avaliação exploratória, inspirada no sistema de avaliações da Steam.
+      </p>
+     </header>
+     <div class="two reviews-large">
+      <article class="review positive">
+       <h3>
+        <span aria-hidden="true">
+         ＋
+        </span>
+        Recomendado
+       </h3>
+       <ul>
+        <li>
+         Ecossistema integrado
+        </li>
+        <li>
+         Identidade visual reconhecível
+        </li>
+        <li>
+         Variedade de funcionalidades
+        </li>
+        <li>
+         Personalização da biblioteca e perfil
+        </li>
+        <li>
+         Integração social
+        </li>
+        <li>
+         Organização dos jogos adquiridos
+        </li>
+       </ul>
+      </article>
+      <article class="review negative">
+       <h3>
+        <span aria-hidden="true">
+         −
+        </span>
+        Pontos de melhoria
+       </h3>
+       <ul>
+        <li>
+         Excesso de informações em algumas páginas
+        </li>
+        <li>
+         Curva de aprendizado para iniciantes
+        </li>
+        <li>
+         Menus e configurações complexos
+        </li>
+        <li>
+         Sobrecarga visual em áreas promocionais
+        </li>
+        <li>
+         Possíveis barreiras de acessibilidade
+        </li>
+        <li>
+         Inconsistências entre áreas da plataforma
+        </li>
+       </ul>
+      </article>
+     </div>
+     <div class="notice">
+      Resultados interpretativos para fins acadêmicos. Não representam notas de usuários, pesquisa de satisfação ou avaliação oficial da Valve.
+     </div>
+    </section>
+    <section aria-label="Propostas de redesign" class="chapter-page" hidden="" id="capitulo-09">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 09 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Propostas de melhorias e redesign
+      </h2>
+      <p class="lead">
+       Uma loja mais clara, com menos competição visual e maior controle de descoberta.
+      </p>
+     </header>
+     <div class="answer">
+      <span class="eyebrow">
+       PERGUNTA NORTEADORA
+      </span>
+      <h3>
+       Se fosse para mudar algo, o que mudaria?
+      </h3>
+      <p>
+       Simplificar a navegação, organizar melhor os destaques e dar ao usuário mais controle sobre o que vê, preservando a identidade da Steam.
+      </p>
+     </div>
+     <div class="redesign">
+      <div class="switch-row">
+       <div aria-label="Versão do protótipo" class="segmented" role="group">
+        <button aria-pressed="true" id="before">
+         Antes
+        </button>
+        <button aria-pressed="false" id="after">
+         Depois
+        </button>
+       </div>
+       <span aria-live="polite" id="version-label">
+        Organização atual · representação
+       </span>
+      </div>
+      <div id="prototype-before">
+       <div aria-label="Protótipo ilustrativo da loja" class="mock dense">
+        <div class="mock-top">
+         <img alt="" src="assets/icons/steam.svg"/>
+         STEAM
+         <span>
+          LOJA　 BIBLIOTECA　 COMUNIDADE
+         </span>
+        </div>
+        <div class="mock-nav">
+         Sua loja · Novidades · Categorias · Pontos · Notícias · Laboratório
+         <span class="mock-search">
+          Buscar jogos　⌕
+         </span>
+        </div>
+        <div class="mock-body">
+         <div class="mock-side">
+          Recomendados
+          <br/>
+          Listas de descoberta
+          <br/>
+          Novidades
+          <br/>
+          Mais vendidos
+          <br/>
+          Ofertas
+          <br/>
+          Marcadores
+          <br/>
+          Curadores
+         </div>
+         <div class="mock-main">
+          <strong>
+           Destaques e recomendados
+          </strong>
+          <small>
+           Ofertas • Novidades • Descobertas • Eventos
+          </small>
+          <div class="mock-feature">
+           <img alt="Arte fictícia de um jogo espacial" src="assets/images/orbit.svg"/>
+           <div>
+            <b>
+             Orbital
+            </b>
+            <small>
+             Ação · Indie · Exploração · Mais
+            </small>
+            <span class="mock-label">
+             Ver detalhes
+            </span>
+           </div>
+          </div>
+          <div class="mock-tiles">
+           <img alt="Capa fictícia de jogo" src="assets/images/orbit.svg"/>
+           <img alt="Capa fictícia de jogo" src="assets/images/forest.svg"/>
+           <img alt="Capa fictícia de jogo" src="assets/images/city.svg"/>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div hidden="" id="prototype-after">
+       <div aria-label="Protótipo ilustrativo da loja" class="mock simple">
+        <div class="mock-top">
+         <img alt="" src="assets/icons/steam.svg"/>
+         STEAM
+         <span>
+          LOJA　 BIBLIOTECA　 COMUNIDADE
+         </span>
+        </div>
+        <div class="mock-nav">
+         Explorar · Biblioteca · Comunidade
+         <span class="mock-search">
+          Buscar jogos　⌕
+         </span>
+        </div>
+        <div class="mock-body">
+         <div class="mock-side">
+          Preferências de descoberta
+          <br/>
+          Gêneros favoritos
+          <br/>
+          Meus jogos
+         </div>
+         <div class="mock-main">
+          <strong>
+           Escolhidos para você
+          </strong>
+          <small>
+           Uma seleção com base nas suas preferências
+          </small>
+          <div class="mock-feature">
+           <img alt="Arte fictícia de um jogo espacial" src="assets/images/orbit.svg"/>
+           <div>
+            <b>
+             Orbital
+            </b>
+            <small>
+             Aventura · Exploração
+            </small>
+            <span class="mock-label">
+             Ver detalhes
+            </span>
+           </div>
+          </div>
+          <div class="mock-tiles">
+           <img alt="Capa fictícia de jogo" src="assets/images/orbit.svg"/>
+           <img alt="Capa fictícia de jogo" src="assets/images/forest.svg"/>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <p class="muted tiny">
+       Protótipos ilustrativos e não oficiais. Elementos internos são exemplos visuais, não controles de uma loja real.
+      </p>
+     </div>
+     <details class="detail">
+      <summary>
+       Ver as 8 propostas: problema, solução e benefício
+      </summary>
+      <div class="detail-body">
+       <div class="proposal-grid">
+        <article>
+         <h4>
+          Menus
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Muitas opções simultâneas.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Agrupar tarefas por objetivo.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Localização mais rápida.
+         </p>
+        </article>
+        <article>
+         <h4>
+          Página inicial
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Destaques competem entre si.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Priorizar blocos por relevância.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Leitura mais clara.
+         </p>
+        </article>
+        <article>
+         <h4>
+          Sobrecarga
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Banners e rótulos abundantes.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Reduzir estímulos simultâneos.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Menor esforço cognitivo.
+         </p>
+        </article>
+        <article>
+         <h4>
+          Modo iniciante
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Recursos avançados logo no início.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Oferecer navegação simplificada opcional.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Aprendizado gradual.
+         </p>
+        </article>
+        <article>
+         <h4>
+          Acessibilidade
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Possíveis barreiras de foco e contraste.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Revisar semântica, foco e escala textual.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Maior autonomia.
+         </p>
+        </article>
+        <article>
+         <h4>
+          Configurações
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Categorias difíceis de localizar.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Busca e agrupamento por tarefa.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Menos tentativas.
+         </p>
+        </article>
+        <article>
+         <h4>
+          Recomendações
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Pouca transparência percebida.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Preferências e explicações editáveis.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Mais controle.
+         </p>
+        </article>
+        <article>
+         <h4>
+          Telas
+         </h4>
+         <p>
+          <b>
+           Problema:
+          </b>
+          Densidade variável.
+         </p>
+         <p>
+          <b>
+           Solução:
+          </b>
+          Layout adaptativo e alvos maiores.
+         </p>
+         <p>
+          <b>
+           Benefício:
+          </b>
+          Melhor uso em telas diversas.
+         </p>
+        </article>
+       </div>
+      </div>
+     </details>
+    </section>
+    <section aria-label="Avaliação geral" class="chapter-page" hidden="" id="capitulo-10">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 10 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Avaliação geral
+      </h2>
+      <p class="lead">
+       Painel de síntese qualitativa. Selecione um critério para ler a justificativa.
+      </p>
+     </header>
+     <div class="score-layout">
+      <div class="score-bars">
+       <button aria-label="Usabilidade: 4 de 5" aria-pressed="true" class="metric" data-metric="0">
+        <span>
+         Usabilidade
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="">
+         </i>
+        </span>
+        <b>
+         4/5
+        </b>
+       </button>
+       <button aria-label="Design visual: 4 de 5" aria-pressed="false" class="metric" data-metric="1">
+        <span>
+         Design visual
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="">
+         </i>
+        </span>
+        <b>
+         4/5
+        </b>
+       </button>
+       <button aria-label="Navegação: 4 de 5" aria-pressed="false" class="metric" data-metric="2">
+        <span>
+         Navegação
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="">
+         </i>
+        </span>
+        <b>
+         4/5
+        </b>
+       </button>
+       <button aria-label="Acessibilidade: não classificada" aria-pressed="false" class="metric" data-metric="3">
+        <span>
+         Acessibilidade
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="">
+         </i>
+         <i class="">
+         </i>
+         <i class="">
+         </i>
+         <i class="">
+         </i>
+         <i class="">
+         </i>
+        </span>
+        <b>
+         N/A
+        </b>
+       </button>
+       <button aria-label="Engajamento: 5 de 5" aria-pressed="false" class="metric" data-metric="4">
+        <span>
+         Engajamento
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+        </span>
+        <b>
+         5/5
+        </b>
+       </button>
+       <button aria-label="Organização: 4 de 5" aria-pressed="false" class="metric" data-metric="5">
+        <span>
+         Organização
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="">
+         </i>
+        </span>
+        <b>
+         4/5
+        </b>
+       </button>
+       <button aria-label="Consistência: 3 de 5" aria-pressed="false" class="metric" data-metric="6">
+        <span>
+         Consistência
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="">
+         </i>
+         <i class="">
+         </i>
+        </span>
+        <b>
+         3/5
+        </b>
+       </button>
+       <button aria-label="Experiência geral: 4 de 5" aria-pressed="false" class="metric" data-metric="7">
+        <span>
+         Experiência geral
+        </span>
+        <span aria-hidden="true" class="bar">
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="filled">
+         </i>
+         <i class="">
+         </i>
+        </span>
+        <b>
+         4/5
+        </b>
+       </button>
+      </div>
+      <aside class="score-detail">
+       <span class="eyebrow">
+        JUSTIFICATIVA DO CRITÉRIO
+       </span>
+       <h3 id="metric-name">
+        Usabilidade
+       </h3>
+       <div class="score-big" id="metric-score">
+        4/5
+       </div>
+       <p aria-live="polite" id="metric-desc">
+        Tarefas centrais são claras; fluxos avançados exigem adaptação.
+       </p>
+       <p class="tiny muted">
+        1 = fraca · 2 = limitada · 3 = adequada · 4 = boa · 5 = muito forte. N/A = evidência insuficiente.
+       </p>
+      </aside>
+     </div>
+     <div class="notice">
+      Notas subjetivas atribuídas para organizar a discussão, não medidas empíricas. Não foram realizados testes com usuários, entrevistas ou auditorias formais.
+     </div>
+    </section>
+    <section aria-label="Considerações finais" class="chapter-page" hidden="" id="capitulo-11">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 11 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Considerações finais
+      </h2>
+      <p class="lead">
+       A qualidade de um produto digital depende tanto do que oferece quanto de como permite que as pessoas o utilizem.
+      </p>
+     </header>
+     <div class="conclusion">
+      <span class="eyebrow">
+       SÍNTESE DA ANÁLISE
+      </span>
+      <h3>
+       Uma experiência integrada.
+       <br/>
+       <span>
+        Com espaço para evoluir.
+       </span>
+      </h3>
+      <p>
+       A Steam combina distribuição, gerenciamento de jogos e interação social em um ecossistema reconhecível. A identidade visual e a organização das tarefas centrais favorecem a utilização, especialmente por usuários familiarizados com jogos digitais.
+      </p>
+      <p>
+       Entretanto, menus extensos, estímulos comerciais e possíveis barreiras de acessibilidade apontam oportunidades de melhoria. A proposta de redesign busca preservar a personalidade da plataforma enquanto reduz o esforço cognitivo e amplia o controle do usuário.
+      </p>
+     </div>
+     <div class="cards">
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        01
+       </span>
+       <h3>
+        UX
+       </h3>
+       <p>
+        Tornar as tarefas mais simples e previsíveis.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        02
+       </span>
+       <h3>
+        UI
+       </h3>
+       <p>
+        Comunicar prioridades com clareza e consistência.
+       </p>
+      </article>
+      <article class="card">
+       <span aria-hidden="true" class="card-icon">
+        03
+       </span>
+       <h3>
+        Inclusão
+       </h3>
+       <p>
+        Projetar para diferentes necessidades e contextos.
+       </p>
+      </article>
+     </div>
+    </section>
+    <section aria-label="Referências" class="chapter-page" hidden="" id="capitulo-12">
+     <header class="section-head">
+      <p class="eyebrow">
+       CAPÍTULO 12 / 13
+       <span>
+       </span>
+       ANÁLISE ACADÊMICA
+      </p>
+      <h2 tabindex="-1">
+       Referências
+      </h2>
+      <p class="lead">
+       Fontes oficiais e conceituais consultadas para contextualizar a plataforma e orientar a análise.
+      </p>
+     </header>
+     <div class="references">
+      <a href="https://store.steampowered.com/about/" rel="noopener noreferrer" target="_blank">
+       <span class="number">
+        01
+       </span>
+       <div>
+        <b>
+         Steam
+        </b>
+        <p>
+         Página oficial da plataforma e funcionalidades
+        </p>
+        <small>
+         https://store.steampowered.com/about/
+        </small>
+       </div>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a href="https://store.steampowered.com/" rel="noopener noreferrer" target="_blank">
+       <span class="number">
+        02
+       </span>
+       <div>
+        <b>
+         Steam Store
+        </b>
+        <p>
+         Referência da organização visual da loja
+        </p>
+        <small>
+         https://store.steampowered.com/
+        </small>
+       </div>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a href="https://www.valvesoftware.com/en/about" rel="noopener noreferrer" target="_blank">
+       <span class="number">
+        03
+       </span>
+       <div>
+        <b>
+         Valve Corporation
+        </b>
+        <p>
+         História e contexto institucional
+        </p>
+        <small>
+         https://www.valvesoftware.com/en/about
+        </small>
+       </div>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" rel="noopener noreferrer" target="_blank">
+       <span class="number">
+        04
+       </span>
+       <div>
+        <b>
+         Nielsen Norman Group
+        </b>
+        <p>
+         Jakob Nielsen — 10 Usability Heuristics for User Interface Design
+        </p>
+        <small>
+         https://www.nngroup.com/articles/ten-usability-heuristics/
+        </small>
+       </div>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a href="https://www.w3.org/TR/WCAG22/" rel="noopener noreferrer" target="_blank">
+       <span class="number">
+        05
+       </span>
+       <div>
+        <b>
+         W3C
+        </b>
+        <p>
+         Web Content Accessibility Guidelines (WCAG) 2.2
+        </p>
+        <small>
+         https://www.w3.org/TR/WCAG22/
+        </small>
+       </div>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" rel="noopener noreferrer" target="_blank">
+       <span class="number">
+        06
+       </span>
+       <div>
+        <b>
+         W3C / WAI
+        </b>
+        <p>
+         Visão geral das WCAG
+        </p>
+        <small>
+         https://www.w3.org/WAI/standards-guidelines/wcag/
+        </small>
+       </div>
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+     </div>
+     <p class="muted">
+      Consulta em 24/11/2026. Os links externos exigem internet; o conteúdo e os recursos da apresentação estão disponíveis offline.
+     </p>
+    </section>
+    <section aria-label="Agradecimentos" class="chapter-page" hidden="" id="capitulo-13">
+     <div class="thanks">
+      <img alt="Símbolo inspirado na Steam" src="assets/icons/steam.svg"/>
+      <p class="eyebrow">
+       FIM DA APRESENTAÇÃO · 13 / 13
+      </p>
+      <h2 tabindex="-1">
+       Obrigado por
+       <br/>
+       <span>
+        navegar conosco.
+       </span>
+      </h2>
+      <p>
+       Uma experiência digital é construída para pessoas.
+      </p>
+      <dl class="credits">
+       <div>
+        <dt>
+         Integrantes
+        </dt>
+        <dd data-field="integrantes">
+        </dd>
+       </div>
+       <div>
+        <dt>
+         Curso
+        </dt>
+        <dd data-field="curso">
+        </dd>
+       </div>
+       <div>
+        <dt>
+         Disciplina
+        </dt>
+        <dd data-field="disciplina">
+        </dd>
+       </div>
+       <div>
+        <dt>
+         Professor(a)
+        </dt>
+        <dd data-field="professor">
+        </dd>
+       </div>
+       <div>
+        <dt>
+         Instituição
+        </dt>
+        <dd data-field="instituicao">
+        </dd>
+       </div>
+      </dl>
+      <button class="primary" data-go="0">
+       ↺ Reiniciar apresentação
+      </button>
+     </div>
+    </section>
+   </main>
+  </div>
+  <footer class="bottom">
+   <div class="progress-info">
+    <span aria-live="polite" id="progress-text">
+     01 / 13 · Início
+    </span>
+    <div aria-label="Progresso da apresentação" aria-valuemax="13" aria-valuemin="0" aria-valuenow="1" class="progress" role="progressbar">
+     <div id="progress-fill">
+     </div>
+    </div>
+    <small>
+     Projeto acadêmico não oficial · Sem vínculo com a Valve Corporation.
+    </small>
+   </div>
+   <div class="controls">
+    <button aria-label="Voltar" class="secondary" disabled="" id="prev">
+     ←
+     <span>
+      Voltar
+     </span>
+    </button>
+    <button aria-label="Avançar" class="primary" id="next">
+     <span>
+      Avançar
+     </span>
+     →
+    </button>
+   </div>
+  </footer>
+  <div class="toast" hidden="" id="toast" role="status">
+  </div>
+ </body>
+</html>
